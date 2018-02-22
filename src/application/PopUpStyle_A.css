@@ -1,0 +1,230 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*VBox {
+	-fx-background-color: #ccffff ;
+	
+	/*#ffb399 for brown evorent 
+	
+}*/
+
+.text-field, .text-area , .list-view{
+	-fx-background-color: white;
+	-fx-border-color: #59431f;
+	-fx-border-width: 1px;
+	-fx-text-fill: #59431f;
+	
+}
+
+.text-area {
+	-fx-wrap-text: true;
+}
+
+.combo-box {
+	-fx-border-color: #59431f;
+	-fx-border-width: 1px;
+	-fx-text-fill: #59431f;
+}
+
+.table-view {
+	-fx-border-width: 1.2px;
+	-fx-border-color: #59431f;
+}
+
+#tblBillingFinalize .column-header {
+  -fx-background-color: transparent;
+}
+
+.table-view .table-row-cell:filled {
+	-fx-background-color: #87abf2;
+	-fx-background-radius: 20 20 20 20;
+    -fx-border-color: white;
+    -fx-border-radius: 10 10 10 10;
+    -fx-border-width: 7;
+    -fx-cell-size: 80px;
+    -fx-table-cell-border-color: transparent; 
+     -fx-font-size: 11pt;
+      -fx-text-background-color: white ;
+     
+}
+
+.table-view:row-selection .column-header-background .filler {
+	-fx-background-color: #59431f;
+}
+
+.table-view:row-selection .column-header-background {
+	-fx-background-color: #59431f;
+}
+
+.table-view:row-selection .column-header-background .nested-column-header .table-column .label {
+	-fx-background-color: #59431f;
+	-fx-text-fill: white;
+	-fx-border-color: #59431f;
+}
+
+.table-view .arrow {
+	-fx-mark-color: #59431f;  
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: " ";
+    
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, white;
+    -fx-background-insets: 0, 0 0 25 0;
+    -fx-padding: 0.0em;
+     -fx-font-size: 11pt;
+      -fx-text-background-color: white ;
+     
+    }
+
+.table-row-cell:odd{
+    -fx-background-color:  -fx-table-cell-border-color, /*#d9cce0 */ white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #2654af;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+#btnShowPass {
+	-fx-background-image: url(/picture/eyeIcon.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 1px;
+	-fx-background-position: center;
+	-fx-border-color: #59431f;
+	
+}
+
+#btnShowPass:hover {
+	-fx-background-image: url(/picture/eyeIconHover.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 1px;
+	-fx-background-position: center;
+	-fx-border-color: #59431f;
+}
+
+#btnShowPass:pressed {
+	-fx-background-image: url(/picture/eyeIcon.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 1px;
+	-fx-background-position: center;
+	-fx-border-color: #59431f;
+}
+
+#btnHidePass {
+	-fx-background-image: url(/picture/closeEyeIcon.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 1px;
+	-fx-background-position: center;
+	-fx-border-color: #59431f;
+}
+
+#btnHidePass:hover {
+	-fx-background-image: url(/picture/closeEyeIconHover.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 1px;
+	-fx-background-position: center;
+	-fx-border-color: #59431f;
+}
+
+#btnHidePass:pressed {
+	-fx-background-image: url(/picture/closeEyeIcon.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 1px;
+	-fx-background-position: center;
+	-fx-border-color: #59431f;
+}
+
+
+.button {
+	-fx-background-color: #59431f;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-border-width: 2px;
+	-fx-border-insets: 2;
+	-fx-font-size: 11pt;
+	 
+}
+
+.radio-button {
+		-fx-text-fill: #59431f;
+}
+
+.radio-button .dot {
+  -fx-mark-highlight-color: #59431f;
+  -fx-mark-color: #59431f;
+}
+
+.combo-box-base {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px; 
+    }
+
+.button:hover {
+	-fx-background-color: white;
+	-fx-border-color: #59431f;
+	-fx-border-width: 2px;
+	-fx-text-fill: #59431f;
+}
+
+.button:pressed {
+	-fx-background-color: #59431f;
+	-fx-border-color: white;
+	-fx-border-width: 2px;
+	-fx-text-fill: white;
+}
+
+#hboxHeader {
+	-fx-background-color: #59431f;
+	/*-fx-background-image: url(/picture/EVODATA_POP_UP_HEADER.jpg);*/
+	-fx-background-position: left;
+	-fx-background-repeat: no-repeat;
+}
+
+#hboxFooter {
+	-fx-background-color: #59431f;
+	/*-fx-background-image: url(/picture/EVODATA_POP_UP_FOOTER.jpg);*/
+	-fx-background-position: right;
+	-fx-background-repeat: no-repeat;
+}
+
+/* #hboxHead {
+	-fx-background-color: #59431f;
+	-fx-background-image: url(/pics/PUS_1B.jpg);
+	-fx-background-position: left;
+	-fx-background-repeat: no-repeat;
+}
+*/
+#hboxHeader .label, #hboxFooter .label {
+	-fx-text-fill: white;
+	/*-fx-effect: dropshadow( gaussian , gray , 1,1,1,1 );	*/
+	
+}
+
+.date-picker:editable .arrow-button {
+	-fx-background-color: white;
+	-fx-border-color: #59431f;
+	-fx-border-width: 1px;
+}
+
+#lblMessage {
+	-fx-text-fill: #930909;
+}
+
+#lblStatus {
+	-fx-text-fill: #930909;
+}
+
+.label {
+	-fx-text-fill: #59431f;
+}

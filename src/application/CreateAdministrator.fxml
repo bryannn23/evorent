@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="520.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Create_Administrator">
+   <top>
+      <HBox fx:id="hboxHeader" alignment="BOTTOM_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="75.0" prefWidth="803.0" text="ADMINISTRATOR DETAILS" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="12.0" top="12.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox fx:id="hboxFooter" prefHeight="30.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <SplitPane fx:id="sp" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <items>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="413.0" prefWidth="545.0">
+               <content>
+                  <VBox fx:id="vboxContent" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0">
+                     <children>
+                        <Group fx:id="grpContent">
+                           <children>
+                              <Label layoutX="-20.0" layoutY="24.0" text="Name:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtName" layoutX="81.0" layoutY="24.0" prefHeight="30.0" prefWidth="220.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblName" layoutX="306.0" layoutY="24.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="69.0" text="Mobile No:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblMobileNo" layoutX="305.0" layoutY="66.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="144.0" text="Email Address:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtEmailAdd" layoutX="81.0" layoutY="142.0" prefHeight="25.0" prefWidth="220.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblEmailAdd" layoutX="305.0" layoutY="140.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblPin" layoutX="-20.0" layoutY="187.0" text="Remarks:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblRemarks" layoutX="305.0" layoutY="183.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="txtRemarks" layoutX="80.0" layoutY="183.0" prefHeight="80.0" prefWidth="220.0" />
+                              <TextField fx:id="txtMobileNo" layoutX="82.0" layoutY="63.0" prefHeight="30.0" prefWidth="220.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="-20.0" layoutY="105.0" text="Birthday:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dpBday" layoutX="82.0" layoutY="102.0" prefHeight="30.0" prefWidth="220.0" />
+                              <Label fx:id="lblBday" layoutX="306.0" layoutY="103.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblPin1" layoutX="-20.0" layoutY="270.0" text="Photo:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="imgPhoto" fitHeight="100.0" fitWidth="220.0" layoutX="81.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="btnChoosePhoto" layoutX="177.0" layoutY="385.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="39.0" prefWidth="128.0" text="Choose Photo" />
+                           </children>
+                        </Group>
+                        <Label fx:id="lblMessage" alignment="CENTER" contentDisplay="CENTER" text="*Insert Error Validation Message*" textAlignment="CENTER" textFill="#b91818">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox>
+                           <children>
+                              <Region prefHeight="39.0" prefWidth="134.0" HBox.hgrow="ALWAYS" />
+                              <Group>
+                                 <children>
+                                    <Button fx:id="btnCancel" layoutX="89.0" layoutY="50.0" mnemonicParsing="false" onAction="#cancel" text="CANCEL">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnCreate" layoutY="50.0" mnemonicParsing="false" onAction="#create" text="CREATE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnUpdate" layoutY="50.0" mnemonicParsing="false" onAction="#update" text="UPDATE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnAdminCreateAccount" layoutX="-69.0" layoutY="50.0" mnemonicParsing="false" onAction="#adminCreateAccount" prefHeight="30.0" text="CREATE ACCOUNT" />
+                                 </children>
+                              </Group>
+                              <Region layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="33.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>

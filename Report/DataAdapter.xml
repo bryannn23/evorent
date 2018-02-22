@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>EVORENT Adapter</name><driver>com.mysql.jdbc.Driver</driver><username>root</username><password>dr3NchEd</password><savePassword>true</savePassword><url>jdbc:mysql://localhost/evorent</url><database></database><serverAddress></serverAddress><classpath>C:\temp\evo-code\DATABASE\mysql-connector-java-5.1.41-bin.jar</classpath></jdbcDataAdapter>

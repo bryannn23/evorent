@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="520.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Create_Building">
+   <top>
+      <HBox fx:id="hboxHeader" alignment="BOTTOM_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="75.0" prefWidth="803.0" text="BUILDING DETAILS" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="12.0" top="12.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox fx:id="hboxFooter" prefHeight="30.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <SplitPane fx:id="sp" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <items>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="413.0" prefWidth="545.0">
+               <content>
+                  <VBox fx:id="vboxContent" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="10.0">
+                     <children>
+                        <Group fx:id="grpContent">
+                           <children>
+                              <Label layoutX="-15.0" layoutY="24.0" text="Building Name:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtBuildingName" layoutX="98.0" layoutY="22.0" prefHeight="30.0" prefWidth="410.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblBuildingName" layoutX="524.0" layoutY="23.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-15.0" layoutY="60.0" text="Address:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblAddress" layoutX="523.0" layoutY="63.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="txtAddress" layoutX="98.0" layoutY="62.0" prefHeight="80.0" prefWidth="410.0" />
+                              <Label layoutX="-15.0" layoutY="157.0" text="Contact Info:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblContactInfo" layoutX="524.0" layoutY="156.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-15.0" layoutY="196.0" text="Date Established:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblDateEstablished" layoutX="524.0" layoutY="195.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtContactInfo" layoutX="98.0" layoutY="152.0" prefHeight="30.0" prefWidth="410.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txtDateEstablished" layoutX="98.0" layoutY="195.0" prefHeight="30.0" prefWidth="410.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </Group>
+                        <Group fx:id="grpContent1" layoutX="236.0" layoutY="19.0">
+                           <children>
+                              <Label layoutX="-15.0" layoutY="24.0" text="No. of Floors:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNoOfFloors" layoutX="98.0" layoutY="22.0" prefHeight="30.0" prefWidth="410.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblNoOfFloors" layoutX="524.0" layoutY="23.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-15.0" layoutY="60.0" text="Features:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblFeatures" layoutX="523.0" layoutY="63.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="txtFeatures" layoutX="98.0" layoutY="62.0" prefHeight="80.0" prefWidth="410.0" />
+                              <Label layoutX="-15.0" layoutY="157.0" text="Condition:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblCondition" layoutX="524.0" layoutY="154.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="txtRemarks" layoutX="98.0" layoutY="194.0" prefHeight="80.0" prefWidth="410.0" />
+                              <Label layoutX="-15.0" layoutY="198.0" text="Remarks:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblRemarks" layoutX="524.0" layoutY="197.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbCondition" layoutX="98.0" layoutY="152.0" prefHeight="30.0" prefWidth="410.0" />
+                           </children>
+                        </Group>
+                        <Group fx:id="grpContent2" layoutX="230.0" layoutY="8.0">
+                           <children>
+                              <Label layoutX="-2.0" layoutY="24.0" text="Building Photo(1):">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-2.0" layoutY="111.0" text="Building Photo(2):">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="351.0" layoutY="25.0" text="Building Photo(3):">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="351.0" layoutY="114.0" text="Building Photo(4):">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="imgBuilding1" fitHeight="86.0" fitWidth="160.0" layoutX="124.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="imgBuilding2" fitHeight="86.0" fitWidth="160.0" layoutX="124.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="imgBuilding3" fitHeight="86.0" fitWidth="160.0" layoutX="473.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="imgBuilding4" fitHeight="86.0" fitWidth="160.0" layoutX="473.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="btnUploadImg" layoutX="526.0" layoutY="206.0" mnemonicParsing="false" onAction="#chooseImg1" prefHeight="33.0" prefWidth="153.0" text="UPLOAD IMAGE" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Group>
+                        <Label fx:id="lblMessage" alignment="CENTER" contentDisplay="CENTER" text="*Insert Error Validation Message*" textAlignment="CENTER" textFill="#b91818">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox>
+                           <children>
+                              <Region prefHeight="39.0" prefWidth="134.0" HBox.hgrow="ALWAYS" />
+                              <Group>
+                                 <children>
+                                    <Button fx:id="btnCancel" layoutX="89.0" layoutY="50.0" mnemonicParsing="false" onAction="#cancel" text="CANCEL">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnCreate" layoutY="50.0" mnemonicParsing="false" onAction="#create" text="CREATE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnUpdate" layoutY="50.0" mnemonicParsing="false" onAction="#update" text="UPDATE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </Group>
+                              <Region layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="33.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>

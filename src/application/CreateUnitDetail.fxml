@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="520.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Create_Unit_Detail">
+   <top>
+      <HBox fx:id="hboxHeader" alignment="BOTTOM_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="75.0" prefWidth="803.0" text="UNIT DETAILS" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="12.0" top="12.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox fx:id="hboxFooter" prefHeight="30.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <SplitPane fx:id="sp" dividerPositions="0.5" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <items>
+            <ScrollPane fitToHeight="true" fitToWidth="true">
+               <content>
+                  <VBox fx:id="vboxContent" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0">
+                     <children>
+                        <Group fx:id="grpContent">
+                           <children>
+                              <Label layoutX="-20.0" layoutY="-120.0" text="Name:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtName" layoutX="120.0" layoutY="-127.0" prefHeight="30.0" prefWidth="180.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblName" layoutX="306.0" layoutY="-126.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="3.0" text="Type:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblType" layoutX="305.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="-79.0" text="Floors:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblFloors" layoutX="306.0" layoutY="-84.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="-36.0" text="Location:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblLocation" layoutX="306.0" layoutY="-43.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbLocation" layoutX="120.0" layoutY="-43.0" prefHeight="30.0" prefWidth="180.0" />
+                              <Label layoutX="-20.0" layoutY="43.0" text="Area:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtArea" layoutX="120.0" layoutY="38.0" prefHeight="30.0" prefWidth="180.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblArea" layoutX="306.0" layoutY="38.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="86.0" text="Features:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblFeatures" layoutX="306.0" layoutY="82.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbFeatures" layoutX="120.0" layoutY="79.0" prefHeight="30.0" prefWidth="180.0" />
+                              <ComboBox fx:id="cmbType" layoutX="120.0" layoutY="-3.0" prefHeight="30.0" prefWidth="180.0" />
+                              <ComboBox fx:id="cmbFloors" layoutX="120.0" layoutY="-86.0" prefHeight="30.0" prefWidth="180.0" />
+                           </children>
+                        </Group>
+                        <Group fx:id="grpContent1" layoutX="47.0" layoutY="195.0">
+                           <children>
+                              <Label layoutX="-20.0" layoutY="-160.0" text="Other Features:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtOtherFeatures" layoutX="120.0" layoutY="-165.0" prefHeight="30.0" prefWidth="180.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblOtherFeatures" layoutX="306.0" layoutY="-165.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="3.0" text="Condition:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblCondition" layoutX="305.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtMaxCapacity" layoutX="120.0" layoutY="-42.0" prefHeight="30.0" prefWidth="180.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="-20.0" layoutY="-117.0" text="Bedroom:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblBedroom" layoutX="306.0" layoutY="-122.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="-79.0" text="Bathroom:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtBathroom" layoutX="120.0" layoutY="-84.0" prefHeight="30.0" prefWidth="180.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblBathroom" layoutX="306.0" layoutY="-84.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="-36.0" text="Maximum Capacity:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblMaxCapacity" layoutX="306.0" layoutY="-40.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbCondition" layoutX="120.0" layoutY="-1.0" prefHeight="30.0" prefWidth="180.0" />
+                              <Label layoutX="-20.0" layoutY="43.0" text="Rent Amount:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtRentAmount" layoutX="120.0" layoutY="38.0" prefHeight="30.0" prefWidth="180.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="lblRentAmount" layoutX="306.0" layoutY="38.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="86.0" text="Association Amount:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblAssocAmount" layoutX="306.0" layoutY="82.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtBedroom" layoutX="120.0" layoutY="-124.0" prefHeight="30.0" prefWidth="180.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txtAssocAmount" layoutX="120.0" layoutY="77.0" prefHeight="30.0" prefWidth="180.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </Group>
+                        <Group fx:id="grpContent11" layoutX="47.0" layoutY="195.0">
+                           <children>
+                              <Label layoutX="-20.0" layoutY="-79.0" text="Remarks:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblRemarks" layoutX="306.0" layoutY="-76.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-20.0" layoutY="10.0" text="Photo:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblPhoto" layoutX="306.0" layoutY="12.0" text="*" textFill="#b91818">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="txtRemarks" layoutX="120.0" layoutY="-82.0" prefHeight="80.0" prefWidth="180.0" />
+                              <ImageView fx:id="imgPhoto" fitHeight="80.0" fitWidth="180.0" layoutX="120.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="btnChoose" layoutX="195.0" layoutY="102.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="33.0" prefWidth="125.0" text="Choose Photo" />
+                           </children>
+                        </Group>
+                        <Label fx:id="lblMessage" alignment="CENTER" contentDisplay="CENTER" text="*Insert Error Validation Message*" textAlignment="CENTER" textFill="#b91818">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox>
+                           <children>
+                              <Region prefHeight="39.0" prefWidth="134.0" HBox.hgrow="ALWAYS" />
+                              <Group>
+                                 <children>
+                                    <Button fx:id="btnCancel" layoutX="89.0" layoutY="50.0" mnemonicParsing="false" onAction="#cancel" text="CANCEL">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnCreate" layoutY="50.0" mnemonicParsing="false" onAction="#create" text="CREATE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnUpdate" layoutY="50.0" mnemonicParsing="false" onAction="#update" text="UPDATE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnUpdateM" layoutY="50.0" mnemonicParsing="false" onAction="#updateM" text="UPDATE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </Group>
+                              <Region layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="33.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <VBox fx:id="vb" alignment="CENTER" prefHeight="480.0" prefWidth="640.0">
+               <children>
+                  <TableView fx:id="tblFinalize" prefHeight="321.0" prefWidth="381.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <HBox>
+                     <children>
+                        <Region prefHeight="39.0" prefWidth="134.0" HBox.hgrow="ALWAYS" />
+                        <Group>
+                           <children>
+                              <Button fx:id="btnFinalize" layoutX="89.0" layoutY="50.0" mnemonicParsing="false" onAction="#finalize" prefHeight="38.0" prefWidth="109.0" text="FINALIZE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Group>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>

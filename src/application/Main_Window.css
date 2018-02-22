@@ -1,0 +1,333 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+VBox {
+	-fx-background-color: #d1b07b ;
+	
+	
+}
+
+#vbReport {
+	-fx-background-color: transparent;
+}
+
+.text-field, .text-area {
+	-fx-background-color: white;
+	-fx-border-color: #59431f;
+	-fx-border-width: 1px;
+	-fx-text-fill: #59431f;
+}
+
+.text-area {
+	-fx-wrap-text: true;
+}
+
+.combo-box {
+	-fx-border-color: #59431f;
+	-fx-border-width: 1px;
+	-fx-text-fill: #59431f;
+}
+
+.combo-box-base {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px; 
+}
+    
+#hboxHeader {
+	-fx-background-color: #59431f;
+	/*-fx-background-image: url(/picture/EVODATA_MAIN_HEADER.jpg);*/
+	-fx-background-position: left;
+	-fx-background-repeat: no-repeat;
+}
+
+#hboxFooter {
+	-fx-background-color: #59431f;
+	/*-fx-background-image: url(/picture/EVODATA_MAIN_FOOTER.1.jpg);*/
+	-fx-background-position: right;
+	-fx-background-repeat: no-repeat;
+}
+
+#hboxHeader .label, #hboxFooter .label {
+	-fx-text-fill: white;	
+	/*-fx-effect: dropshadow( gaussian , gray , 1,1,1,1 );*/
+}
+
+#tabPane_Modules {
+	-fx-tab-min-height: 40;
+	-fx-tab-max-height: 40;
+	-fx-tab-min-width: 100;
+	-fx-background-color: #ffffff;
+}
+
+#tabPane_Modules *.tab{
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab{
+    -fx-background-color:   -fx-background;
+    -fx-background: #d1b07b ;
+}
+
+
+#tabPane_Modules:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em 0.166667em 0.0em 0.0em;
+}
+
+#tabPane_Modules .tab-label {
+    -fx-text-fill: white;
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+    -fx-wrap-text: true;
+}
+
+#tabPane_Modules .tab-pane {
+	-fx-tab-min-width: 100;
+}
+
+#tabPane_Modules .tab-pane .tab-header-background {
+	-fx-background-color: #d1b07b;
+}
+
+#tabPane_Modules .headers-region
+{
+-fx-background-color: #d1b07b;
+}
+
+#tabPane_Modules .tab-header-background
+{
+-fx-background-color: #d1b07b;
+
+}
+
+#tabPane_Modules .tab:selected {
+    -fx-background-color: #59431f;
+}
+
+#tabPane_Modules .tab:selected .tab-label {
+    -fx-text-fill: #ffffff;
+}
+
+.table-view {
+	/*-fx-border-width: 3px;*/
+	-fx-border-color: #59431f;
+	
+}
+
+.table-view .column-header {
+  -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12pt;
+}
+
+.table-view .table-row-cell:filled {
+	-fx-background-color: #59431f;
+	-fx-background-radius: 20 20 20 20;
+    -fx-border-color: white;
+    -fx-border-radius: 8 8 8 8;
+    -fx-border-width: 5;
+    -fx-cell-size: 40px;
+    -fx-font-size: 11pt;
+     -fx-text-background-color: white ;
+   
+}
+
+#tblExecutive .table-row-cell:filled {
+	-fx-cell-size: 80px; 
+}
+
+#tblAdministrator .table-row-cell:filled {
+	-fx-cell-size: 80px; 
+}
+
+#tblUnitDetail .table-row-cell:filled {
+	-fx-cell-size: 100px;
+}
+
+#tblTenant .table-row-cell:filled {
+	-fx-cell-size: 90px;
+}
+
+#tblOccupancyDetail .table-row-cell:filled {
+	-fx-cell-size: 90px;
+}
+
+#tblOccupancy .table-row-cell:filled {
+	-fx-cell-size: 90px;
+}
+
+#tblUserList .table-row-cell:filled {
+	-fx-cell-size: 70px;
+}
+
+#tblOccupancyTerminator .table-row-cell:filled {
+	-fx-cell-size: 90px;
+}
+
+.table-view:row-selection .column-header-background .filler {
+	-fx-background-color: #c39955;
+	
+}
+
+.table-view:row-selection .column-header-background {
+	-fx-background-color: #c39955;
+}
+
+.table-view:row-selection .column-header-background .nested-column-header .table-column .label {
+	-fx-background-color: #c39955;
+	-fx-text-fill: white;
+	-fx-border-color: #c39955;
+}
+
+.table-view .arrow {
+	-fx-mark-color: #59431f;  
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: " ";
+    
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, white;
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-padding: 0.0em;
+     -fx-text-fill: #ffffff;
+     
+    }
+
+.table-row-cell:odd{
+    -fx-background-color:  -fx-table-cell-border-color, /*#d9cce0 */ white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;  
+     -fx-text-fill: #ffffff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #59431f;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+     -fx-text-fill: #ffffff;
+}
+
+#tblDashboard .table-row-cell:filled {
+	-fx-background-color: #59431f;
+	-fx-background-radius: 20 20 20 20;
+    -fx-border-color: white;
+    -fx-border-radius: 10 10 10 10;
+    -fx-padding: 10;
+    -fx-border-width: 10;
+    -fx-cell-size: 130px;
+    -fx-font-size: 11pt;
+    -fx-text-background-color: white ;
+
+}
+
+.button {
+	-fx-background-color: #59431f;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-border-width: 2px;
+	-fx-border-insets: 2;
+}
+
+.button:hover {
+	-fx-background-color: white;
+	-fx-border-color: #59431f;
+	-fx-border-width: 2px;
+	-fx-text-fill: #59431f;
+}
+
+.button:pressed {
+	-fx-background-color: #59431f;
+	-fx-border-color: white;
+	-fx-border-width: 2px;
+	-fx-text-fill: white;
+}
+
+#btnSearch {
+	-fx-background-image: url(/picture/searchIcon.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 0px;
+	-fx-background-position: center;
+}
+
+#btnSearch:hover {
+	-fx-background-image: url(/picture/searchIconHover.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 0px;
+	-fx-background-position: center;
+}
+
+#btnSearch:pressed {
+	-fx-background-image: url(/picture/searchIcon.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 0px;
+	-fx-background-position: center;
+}
+
+#btnLogout {
+	-fx-background-image: url(/picture/logout.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 0px;
+	-fx-background-position: center;
+}
+
+#btnLogout:hover {
+	-fx-background-image: url(/picture/logoutHover.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 0px;
+	-fx-background-position: center;
+}
+
+#btnLogout:pressed {
+	-fx-background-image: url(/picture/logout.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:transparent;
+	-fx-border-width: 0px;
+	-fx-background-position: center;
+}
+
+#pane1 {
+	
+	-fx-border-color: #59431f;
+	-fx-border-width: 2px;
+	
+}
+
+#pane2 {
+	
+	-fx-border-color: #59431f;
+	-fx-border-width: 2px;
+	
+}
+
+#pane3 {
+	
+	-fx-border-color: #59431f;
+	-fx-border-width: 2px;
+	
+}
+
+#pane4 {
+	
+	-fx-border-color: #59431f;
+	-fx-border-width: 2px;
+	
+}
+
+/* #cmbSearch .arrow, .combo-box .arrow-button{
+    -fx-background-color: transparent;
+}*/
+
